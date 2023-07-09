@@ -9,4 +9,5 @@ Create a nested array called myArray.
 */
 
 
-const myArray = [["I love animals", 2],["Because",  2]];
+// Only change code below this line
+const myArray = [["Larissa", 23], ["Joaozinho", 1]];
