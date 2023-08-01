@@ -6,8 +6,14 @@
   margin-top: 50px
   justify-content: space-around
 
+form
+    margin-top: 20px
+    margin-left: 15px
+    position: left
+    width: 800px
+
 input[type="text"]
-  border: solid 1px var(--primary-color)
+  border: solid 1px gray
   padding: 10px
   border-radius: 8px
   margin-right: 4px
@@ -16,11 +22,17 @@ input[type="text"]
 
 button
   padding: 10px
-  border: solid 1px var(--primary-color)
-  background: var(--primary-color)
-  color: white
+  border: none
+  background-color: #6393E4
+  color: black
   border-radius: 8px
+  font-weight: 600
 
+  &:hover
+    background-color: #AADAF2
+    border: solid 2px black
+
+    
 
 @media (min-width: 500px) and (max-width: 768px)
   .results
