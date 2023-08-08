@@ -3,8 +3,12 @@
 <app-server></app-server> -->
 <div class="container">
     <div class="row">
-        <div class="col-xs-12">
-            <h3>I'm in the AppComponent!</h3>
-        </div>
+        <h6>Ola, {{username}} </h6>
+        <button type="button" class="btn btn-primary" [disabled]="!allowNewServer" (click)="onCreateServer()">Botao</button>
+        <!-- <p>{{serverCreationStatus}}</p> -->
+        <p *ngIf="serverCreated; else noServer">Server was created, server name is {{serverName}}</p>
+        <ng-template #noServer>
+            <p>No server was created!</p>
+        </ng-template>
     </div>
 </div>

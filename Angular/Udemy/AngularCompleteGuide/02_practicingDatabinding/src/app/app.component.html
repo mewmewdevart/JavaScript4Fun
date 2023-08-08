@@ -1,0 +1,11 @@
+<div class="container">
+  <img src="../assets/informacoes.png" alt="">
+  <form (submit)="onFormSubmit($event)">
+    <input [(ngModel)]="username" type="text" id="name" name="name">
+    <button [disabled]="username === ''" (click)="resetUsername()">Reset Username</button>
+    <p *ngIf="username">Username: {{username}}</p>
+  </form>
+</div>
+
+
+<router-outlet></router-outlet>
