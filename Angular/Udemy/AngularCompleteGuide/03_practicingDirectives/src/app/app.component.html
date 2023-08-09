@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class ="container-basico">
+      <button class="btn btn-primary" (click)="showDetails()">
+        Display Details
+      </button>
+      <p *ngIf="true">{{word}}</p>
+      <button class="btn btn-secondary" (click)="word = ''">Reset options</button>
+    </div>
+
+    <div class ="container-basico">
+      <button class="btn btn-success" (click)="onToggleDetails()">
+        Toggle 
+      </button>
+      <div *ngFor="let logItem of log" [ngStyle]="{ 'background-color': logItem >= 5 ? 'green' : 'transparent' }" [ngClass]="{'white-text' : logItem >= 5}">{{ logItem }}</div>
+      <button class="btn btn-secondary dois" (click)="log = []">Reset options</button>
+    </div>
+  
+  </div>
+</div>
+<router-outlet></router-outlet>
